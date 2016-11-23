@@ -3,6 +3,7 @@ var app = express();
 var indexRouter = require('./routes/index')(app);
 var aboutRouter = require('./routes/about')(app);
 var usersRouter = require('./routes/users')(app);
+var charRouter = require('./routes/chat')(app);
 
 app.set('port', process.env.PORT | 3030);
 app.set('views', __dirname + '/views');

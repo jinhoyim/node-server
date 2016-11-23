@@ -7,8 +7,6 @@ module.exports = function(app){
   ];
 
   app.get('/users', function(req, res){
-    // res.send('about');
-    // res.render('users.ejs');
     res.json(users);
   });
 
